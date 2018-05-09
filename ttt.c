@@ -8,6 +8,10 @@
 #define PLAYERO 'O'
 #define EMPTY_CHAR ' '
 #define N 3
+#define UNFINISHED 2
+#define WIN 1
+#define DRAW 0
+#define LOSE -1
 
 char board[3][3];
 
@@ -117,7 +121,23 @@ void print_board() {
     printf("\n\n");
 }
 
-
+/*int comp_turn(char board[N][N], char player) {
+    printf("\t\t\tComputer's turn\n");
+   
+    // Will add the minimax here once completed
+    print_board(board);
+    
+    int play = win_check(board, player);
+    if(play == WIN) {
+        printf("\nThe winner is: Computer\n");
+        return TRUE;
+    } 
+    else if(play == DRAW) {
+        printf(\nTie Game\n");
+               return TRUE;
+       }
+               return FALSE;
+  } */
 
 //int win_check()
 //{
